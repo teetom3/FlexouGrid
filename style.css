@@ -18,7 +18,9 @@ body {
 .left_nav img {
     height: 50px; 
 }
-
+.bold {
+    font-weight: 400;
+}
 .right_content {
     display: flex;
     gap: 20px; 
