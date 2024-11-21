@@ -199,6 +199,8 @@ body {
     border-radius: 8px;
     padding: 15px;
     height: 800px;
+    display: flex;
+    flex-direction: column; /* Organise les enfants en colonne */
   }
   
   .services-cards h2 {
@@ -210,6 +212,7 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
+    flex-grow: 1; /* Permet à la liste de prendre tout l'espace disponible */
   }
   
   .service-item {
@@ -230,7 +233,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 10px;
+    margin-top: auto; /* Pousse le footer vers le bas */
   }
   
   .add-service-btn {
@@ -248,6 +251,8 @@ body {
     border-radius: 8px;
     padding: 15px;
     height: 250px;
+    display: flex;
+    flex-direction: column;
   }
   
   .service-details h3 {
@@ -263,9 +268,11 @@ body {
   .service-details p {
     margin: 8px 0;
   }
+ 
   
   .action-buttons {
-    margin-top: 20px;
+    margin-top: auto;
+    justify-content: space-between;
     display: flex;
     gap: 10px;
   }
