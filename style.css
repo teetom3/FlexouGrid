@@ -16,7 +16,8 @@ body {
 }
 
 .left_nav img {
-    height: 50px; 
+    height: 150px;
+    width: auto; 
 }
 .bold {
     font-weight: 400;
@@ -120,3 +121,58 @@ body {
 .bot_card a:hover {
     color: #0056b3;
 }
+
+
+
+/********* GALLERY **************/
+
+  
+.gallery-title {
+    color: blue;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 colonnes */
+
+    
+    grid-template-areas:
+      "a b e f g"
+      "h b i c c"
+      "j k d d l"
+      "m n d d o";
+      width: 100%; /* La grille s'étend sur toute la largeur */
+      gap:30px;
+ 
+  }
+  
+  .gallery img {
+    width: 100%; /* Les images remplissent leur zone */
+    height: 100%; /* Elles remplissent également la hauteur */
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Positionnement spécifique */
+  #a { grid-area: a; }
+  #b { grid-area: b; }
+  #c { grid-area: e; }
+  #d { grid-area: f; }
+  #e { grid-area: g; }
+  #f { grid-area: h; }
+  #g { grid-area: i; }
+  #h { grid-area: c; }
+  #i { grid-area: j; }
+  #j { grid-area: k; }
+  #k { grid-area: d; }
+  #l { grid-area: l; }
+  #m { grid-area: m; }
+  #n { grid-area: n; }
+  #o { grid-area: o; }
+  
