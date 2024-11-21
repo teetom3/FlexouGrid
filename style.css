@@ -133,7 +133,7 @@ body {
   
   .gallery {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* 5 colonnes */
+    grid-template-columns: repeat(5, 1fr); 
 
     
     grid-template-areas:
@@ -141,14 +141,14 @@ body {
       "h b i c c"
       "j k d d l"
       "m n d d o";
-      width: 100%; /* La grille s'étend sur toute la largeur */
+      width: 100%; /
       gap:30px;
  
   }
   
   .gallery img {
-    width: 100%; /* Les images remplissent leur zone */
-    height: 100%; /* Elles remplissent également la hauteur */
+    width: 100%; 
+    height: 100%; 
     object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -158,8 +158,7 @@ body {
   .gallery img:hover {
     transform: scale(1.05);
   }
-  
-  /* Positionnement spécifique */
+ 
   #a { grid-area: a; }
   #b { grid-area: b; }
   #c { grid-area: e; }
@@ -200,7 +199,7 @@ body {
     padding: 15px;
     height: 800px;
     display: flex;
-    flex-direction: column; /* Organise les enfants en colonne */
+    flex-direction: column; 
   }
   
   .services-cards h2 {
@@ -212,7 +211,7 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
-    flex-grow: 1; /* Permet à la liste de prendre tout l'espace disponible */
+    flex-grow: 1; 
   }
   
   .service-item {
@@ -233,7 +232,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: auto; /* Pousse le footer vers le bas */
+    margin-top: auto; 
   }
   
   .add-service-btn {
